@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="alert-box" id="alert">
+    <p class="title">알림창임</p>
+  
+</div>
+<button id="close">닫기</button>
+<button onclick="알림창열닫기('block','아이디입력');">버튼1</button>
+<button onclick="알림창열닫기('block','비밀번호입력');">버튼2</button>
+<script>
+
+
+document.getElementById('close').addEventListener('click',()=>{
+  document.getElementById('alert').style.display='none';
+});
+
+
+
+  //가변적인 부분을 구멍(인자/파라미터) 자리 에 집어 넣어서 실행할수 있따.
+  function 알림창열닫기(파라미터,글자변경1){
+    document.getElementById('alert').style.display=파라미터;
+    document.getElementsByClassName('title1').innerHTML=글자변경1;
+    document.getElementById('alert').innerHTML=글자변경1;
+  }
+
+</script>
+</body>
+</html>
