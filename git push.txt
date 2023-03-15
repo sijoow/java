@@ -1,0 +1,17 @@
+git inti  repositiy 생성
+
+git branch -M main <<기본 브런치 메인
+
+git add .
+git commit -m '저장'
+
+원격저장소 에 올리기
+git push -u 'https://github.com/sijoow/java.git' main  <<branch 메인 브런치 추가되라
+
+git push origin +master
+git fetch origin master
+
+
+오류 해결 방법
+
+git pull --rebase origin main
