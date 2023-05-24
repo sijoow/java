@@ -1,0 +1,13 @@
+<script language="javascript" type="text/javascript">
+jq(document).ready(function() {
+  var currentUrl = window.location.href;
+  var targetUrl = 'http://skin-skin103.yogibo.cafe24.com/product/%EB%8F%84%EA%B7%B8-%EB%A1%A4-%EB%A9%94%EC%9D%B4%ED%8A%B8/319/category/238/display/1/';
+  
+  if (currentUrl === targetUrl) {
+    jq('#show').hide();
+  } else {
+    jq('#show').show();
+  }
+});
+
+</script>
